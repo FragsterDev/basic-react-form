@@ -1,16 +1,24 @@
 import React from 'react'
 import InputCard from './InputCard'
 
-// function Submit(){
-
-// }
+function Submit(){
+  return (
+    <button>
+      <div className='w-[350px] h-12 flex justify-center items-center bg-green-500 hover:cursor-pointer
+      hover:bg-green-400'>
+        <p className='text-white'>Submit</p>
+      </div>
+    </button>
+  )
+}
 
 function Frame() {
   return (
-    <div className='w-96 h-72 bg-amber-200 flex flex-col justify-evenly'>
-        <InputCard field='first name'/>
-        <InputCard field='last name'/>
-        <InputCard field='email'/>
+    <div className='w-[400px] h-[300px] bg-white flex flex-col justify-evenly items-center shadow-xl shadow-black'>
+        <InputCard field='First Name'/>
+        <InputCard field='Last Name'/>
+        <InputCard field='Email'/>
+        <Submit />
     </div>
   )
 }
